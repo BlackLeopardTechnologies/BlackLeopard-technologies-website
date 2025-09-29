@@ -4,12 +4,15 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import TopNav from "./components/topNav";
 
+import { AboutPage } from "./components/aboutPage";
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <TopNav></TopNav>   
+    <TopNav></TopNav>  
+    <AboutPage></AboutPage>
     </>
   )
 }

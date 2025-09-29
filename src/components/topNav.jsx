@@ -46,13 +46,13 @@ const TopNav = () => {
                 <a onClick={()=>{
                   location.href="#About"
                    setIsOpen(!isOpen)
-                }}>About Us</a>
+                }}>Who We Are</a>
               </li>
               <li>
                 <a onClick={()=>{
-                  location.href="#Services"
+                  location.href="#Products"
                    setIsOpen(!isOpen)
-                }}>Our Services</a>
+                }}>Our Products</a>
               </li>
               <li>
                 <a onClick={()=>{
@@ -72,9 +72,15 @@ const TopNav = () => {
           <div className="inn">
           <h1>BlackLeopard Technologies <br></br>Innovating Tomorrow, Today</h1>
           <p>BlackLeopard Technologies is a forward-thinking tech company dedicated to delivering cutting-edge digital solutions that empower businesses and individuals. With a focus on software development, cloud services, and emerging technologies, we combine innovation, security, and efficiency to help our clients stay ahead in a rapidly evolving digital world.</p>
-          <button className="cta" onClick={()=>window.location.href='#Services'}>Our Services</button>
+          <button className="cta" onClick={()=>window.location.href='#Products'}>
+            About Us</button>
        </div> </div>
       </div>
+
+
+    
+
+      
     </>
   );
 };
