@@ -11,7 +11,7 @@ export const AboutPage = () => {
               data-aos-duration="2000">
           <div className=""> 
             <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nesciunt laborum quos! Id unde optio sunt, quia ea similique sint velit, incidunt accusantium magni numquam, harum voluptas quam et? Cumque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis vero dolorem maiores nulla sunt perferendis, saepe cumque accusamus perspiciatis ducimus ratione, iure assumenda officia repellat sed? Voluptatibus nobis in debitis?</p>
+            <p>BlackLeopard Technologies is a dynamic global technology solutions provider headquartered in Ghana, dedicated to empowering businesses through comprehensive technology services. We specialize in three fundamental pillars of modern business technology: Computer Hardware, Computer Software, and Computerized Accounting.</p>
           </div>
         </div>
         
@@ -33,7 +33,9 @@ export const AboutPage = () => {
               data-aos-duration="2000">
           <div className="">
             <h2>Who We Are</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nesciunt laborum quos! Id unde optio sunt, quia ea similique sint velit, incidunt accusantium magni numquam, harum voluptas quam et? Cumque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis vero dolorem maiores nulla sunt perferendis, saepe cumque accusamus perspiciatis ducimus ratione, iure assumenda officia repellat sed? Voluptatibus nobis in debitis?</p>
+            <p>With our headquarters rooted in Ghana and our vision set on the world, we bridge the gap between businesses and the technology they need to thrive. We understand that in today's digital landscape, success requires more than just technology—it requires the right technology, expertly implemented and reliably supported.
+Our team combines technical expertise with deep industry knowledge to deliver solutions that are not only innovative but also practical and results-driven. Whether you're looking to upgrade your hardware infrastructure, develop custom software solutions, or implement sophisticated accounting systems, BlackLeopard Technologies is your trusted partner for complete technology transformation.
+We serve businesses across industries and continents, bringing world-class technology solutions with a personalized approach that puts your unique needs first. From small enterprises to large organizations, we scale our services to match your ambitions and drive your growth in an increasingly connected world.</p>
           </div>
         </div>
         

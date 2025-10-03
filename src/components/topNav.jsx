@@ -1,9 +1,37 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AppLogo from "../assets/logo.png";
 
 
 const TopNav = () => {
   const [isOpen, setIsOpen] = useState(false);
+  
+
+
+   const slides = [
+    {
+      title: "BlackLeopard Technologies <br/>Innovating Tomorrow, Today",
+      desc: "BlackLeopard Technologies is a forward-thinking tech company dedicated to delivering cutting-edge digital solutions that empower businesses and individuals. With a focus on software development, cloud services, and emerging technologies, we combine innovation, security, and efficiency to help our clients stay ahead in a rapidly evolving digital world."
+    },
+    {
+      title: "Driving Digital Transformation",
+      desc: "We help businesses embrace the future with AI-driven solutions, scalable cloud infrastructure, and secure digital platforms tailored to unique needs."
+    },
+    {
+      title: "Empowering Innovation Everywhere",
+      desc: "From startups to enterprises, our mission is to provide smart, reliable, and efficient tech solutions that make a real impact in everyday life."
+    }
+  ];
+
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % slides.length);
+    }, 10000); // change slide every 5s
+    return () => clearInterval(interval);
+  }, []);
+
+
 
   return (
     <>
@@ -46,13 +74,13 @@ const TopNav = () => {
                 <a onClick={()=>{
                   location.href="#About"
                    setIsOpen(!isOpen)
-                }}>Who We Are</a>
+                }}>About us</a>
               </li>
               <li>
                 <a onClick={()=>{
                   location.href="#Products"
                    setIsOpen(!isOpen)
-                }}>Our Products</a>
+                }}>Our Services</a>
               </li>
               <li>
                 <a onClick={()=>{
@@ -70,10 +98,19 @@ const TopNav = () => {
               data-aos-duration="3000"
               data-aos-delay="300">
           <div className="inn">
-          <h1>BlackLeopard Technologies <br></br>Innovating Tomorrow, Today</h1>
-          <p>BlackLeopard Technologies is a forward-thinking tech company dedicated to delivering cutting-edge digital solutions that empower businesses and individuals. With a focus on software development, cloud services, and emerging technologies, we combine innovation, security, and efficiency to help our clients stay ahead in a rapidly evolving digital world.</p>
-          <button className="cta" onClick={()=>window.location.href='#Products'}>
-            About Us</button>
+          {/* <h1>BlackLeopard Technologies <br></br>Innovating Tomorrow, Today</h1>
+          <p>BlackLeopard Technologies is a forward-thinking tech company dedicated to delivering cutting-edge digital solutions that empower businesses and individuals. With a focus on software development, cloud services, and emerging technologies, we combine innovation, security, and efficiency to help our clients stay ahead in a rapidly evolving digital world.</p> */}
+           <h1
+            dangerouslySetInnerHTML={{ __html: slides[index].title }}
+          />
+          <p>{slides[index].desc}</p>
+          {/* <button
+            className="cta"
+            onClick={() => (window.location.href = "#Products")}
+          ></button> */}
+          
+          <button className="cta" onClick={()=>window.location.href='#Services'}>
+            Services</button>
        </div> </div>
       </div>
 
