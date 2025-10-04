@@ -256,12 +256,14 @@ html{
   justify-content: center;
   padding-top: 30px;
   font-size: 2rem;
+  padding-top: 100px;
 }
 .ServMain{
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 100%;
+  padding-top: 15px;
 }
 
 .ServMain .ann{
@@ -296,6 +298,10 @@ html{
 
 }
 
+
+.inn p.navP{
+  margin-top: -10px;
+}
 @media screen and (max-width: 950px) {
  
   .ServMain .ann{

@@ -5,12 +5,12 @@ export const Services = () => {
    const [activeTab, setActiveTab] = useState("accounting"); // default active
   return (
 
-    <div data-aos="fade-up" data-aos-duration="2000">
+    <div id="Services" data-aos="fade-up" data-aos-duration="2000">
 
     <div className="headd" >
       <h2>Our Services</h2>
     </div>
-      <div id="Services" className="p-2">
+      <div className="p-2">
       {/* Tab buttons */}
       <div className="flex space-x-2 btnss">
         <button
@@ -46,7 +46,7 @@ export const Services = () => {
       </div>
 
       {/* Tab content */}
-      <div className="p-4   ServMain">
+      <div className="   ServMain">
         <div className="ann">
           {activeTab === "accounting" && 
           <>
