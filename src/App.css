@@ -234,6 +234,7 @@ html{
   align-items: center;
   justify-content: center;
   padding: 30px 0px;
+  width: 100%;
 }
 .btnss .btnssMen{
   margin: 0px;
@@ -256,7 +257,6 @@ html{
   justify-content: center;
   padding-top: 30px;
   font-size: 2rem;
-  padding-top: 100px;
 }
 .ServMain{
   display: flex;
@@ -305,6 +305,19 @@ html{
 }
 @media screen and (max-width: 950px) {
  
+
+  .btnss{
+  flex-direction: column;
+  padding: 30px 0px;
+  width: 100%;
+}
+.btnss .btnssMen{
+  margin: 0px;
+  outline: none;
+  border-radius: 0px;
+  width: 100%;
+}
+
   .ServMain .ann{
   width: 100%;
   margin-top: -30px;
@@ -431,7 +444,7 @@ html{
 }
 
 .bg{
-  height: auto;
+  height: 100vh;
 }
 
 .about{
