@@ -300,13 +300,18 @@ html{
 
 
 .inn p.navP{
-  margin-top: -10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 950px) {
  
   .ServMain .ann{
   width: 100%;
   margin-top: -30px;
+}
+
+.inn p.navP{
+  margin-top: -15px;
 }
 
 .ServMain .ann .boxes .box{

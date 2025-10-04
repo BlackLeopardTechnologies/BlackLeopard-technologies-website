@@ -5,7 +5,7 @@ export const Services = () => {
    const [activeTab, setActiveTab] = useState("accounting"); // default active
   return (
 
-    <div id="Services" data-aos="fade-up" data-aos-duration="2000">
+    <div data-aos="fade-up" data-aos-duration="2000">
 
     <div className="headd" >
       <h2>Our Services</h2>
