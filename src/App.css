@@ -101,25 +101,30 @@ html{
   animation:slider 30s infinite;
 }
 
-
 @keyframes slider {
-   0% {
+  0% {
     background-image: url("./assets/bg2.jpg");
+    background-position: 0 0;
   }
   33% {
     background-image: url("./assets/bg2.jpg");
+    background-position: 0 0;
   }
   34% {
     background-image: url("./assets/bg3.png");
+    background-position: 100% 0; /* start right */
   }
   66% {
     background-image: url("./assets/bg3.png");
+    background-position: 0 0; /* slide to center */
   }
   67% {
     background-image: url("./assets/bg5.jpg");
+    background-position: 100% 0; /* start right again */
   }
   100% {
     background-image: url("./assets/bg5.jpg");
+    background-position: 0 0; /* slide to center */
   }
 }
 /* Logo + menu container */
@@ -145,10 +150,13 @@ html{
   align-items: center;
   max-width: 100%;
   width: 100%;
-  backdrop-filter: blur(5px);
-  background: linear-gradient(to top,  rgba(0, 0, 0, 0.541),  rgba(0, 0, 0, 0));
+  backdrop-filter: blur(2px);
+  background: linear-gradient(to top,  rgba(0, 0, 0, 0.733),  rgba(0, 0, 0, 0));
   padding: 20px;
+  overflow: hidden;
 }
+
+
 
 .bg .title .inn{
   max-width: 80%;
@@ -218,8 +226,88 @@ html{
 }
 
 
+
+
+/* SERVICES */
+.btnss{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0px;
+}
+.btnss .btnssMen{
+  margin: 0px;
+  outline: none;
+  border-radius: 0px;
+}
+.btnss .btnssMen.a{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.btnss .btnssMen.b{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+.headd{
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  font-size: 2rem;
+}
+.ServMain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.ServMain .ann{
+  max-width: 100%;
+  width: 60%;
+  margin-top: -30px;
+}
+.ServMain .ann p{
+  text-align: center;
+}
+
+
+
+.ServMain .ann .boxes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px 0px;
+}
+
+.ServMain .ann .boxes .box{
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(0, 0, 255, 0.041);
+  margin: 3px;
+  height: 300px;
+  border: 1px solid rgba(2, 2, 80, 0.274);
+  border-radius: 5px;
+
+}
+
 @media screen and (max-width: 950px) {
  
+  .ServMain .ann{
+  width: 100%;
+  margin-top: -30px;
+}
+
+.ServMain .ann .boxes .box{
+  width: 45%;
+  height: 150px;
+}
+
   .bg .title h1{
   font-size: 2.5rem;
    
@@ -255,13 +343,13 @@ html{
 }
 
 .bg .title{
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .bg {
   background-image: url("./assets/bg2.jpg");
   width: 100%;
-  min-height: calc(100% + 300px);
+  min-height: 80vh;
   height: auto;
 }
 
