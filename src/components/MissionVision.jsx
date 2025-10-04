@@ -31,8 +31,9 @@ export const MissionVision = () => {
       <div className="about bb">
         
           <div className="b">
-            <h2 data-aos="fade-up"
-              data-aos-duration="2000">Core Values</h2>
+            <div className="headd" >
+                <h2>Core Values</h2>
+            </div>
             <div className="inerAbout">
                 <div className="values a" data-aos="fade-up"
               data-aos-duration="1000">

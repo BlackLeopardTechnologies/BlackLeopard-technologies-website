@@ -7,6 +7,8 @@ import {Services} from "./components/Services";
 
 import { AboutPage } from "./components/aboutPage";
 import { MissionVision } from "./components/MissionVision";
+import { Partners } from "./components/Partners";
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +19,7 @@ function App() {
     <AboutPage></AboutPage>
     <Services></Services>
     <MissionVision></MissionVision>
+    <Partners></Partners>
     </>
   )
 }

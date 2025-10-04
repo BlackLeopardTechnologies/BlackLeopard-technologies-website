@@ -344,7 +344,7 @@ html{
 
 .inerAbout .values .list{
   padding: 15px;
-  background: rgb(6, 6, 83);
+  background: rgb(28, 28, 170);
   border-radius: 10px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -363,11 +363,44 @@ html{
 }
 
 .inerAbout .values p{
-  font-size: 13px;
-  text-align: justify;
+  font-size: 14px;
+  text-align: left;
 }
 
+.inerAbout .values.new{
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+
+
+
+
+
+
+/* PARTNERS */
+
+.about.aa .inerAbout{
+  justify-content: flex-start;
+  flex-direction: row;
+  width:100%;
+  text-wrap: wrap;
+}
+.about.aa .inerAbout .Imagepart{
+  width: 100px;
+  padding: 8px;
+}
+.about.aa .inerAbout .values .dess{
+  overflow: hidden;
+  width: auto;
+  text-wrap: wrap;
+}
+
+
+
 @media screen and (max-width: 950px) {
+
+
 
   .inerAbout .values .dess{
   padding: 15px;
