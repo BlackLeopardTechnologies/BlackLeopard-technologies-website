@@ -103,7 +103,7 @@ const TopNav = () => {
            <h1
             dangerouslySetInnerHTML={{ __html: slides[index].title }}
           />
-          <p >{slides[index].desc}</p>
+          <p className="navP">{slides[index].desc}</p>
           {/* <button
             className="cta"
             onClick={() => (window.location.href = "#Products")}
