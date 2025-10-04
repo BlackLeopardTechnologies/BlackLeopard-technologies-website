@@ -48,7 +48,7 @@ export const MissionVision = () => {
               data-aos-duration="1000">
                     <div className="list">2</div>
                     <div className="dess">
-                        <h3>Innovation</h3>
+                        <h3>Innovation </h3>
                         <p>We continuously explore emerging technologies and creative approaches to deliver forward-thinking solutions across hardware, software, and accounting services that keep our clients ahead of the competition.
                         </p>
                    </div>
